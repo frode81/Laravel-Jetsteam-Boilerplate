@@ -1362,6 +1362,11 @@ select {
 	margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
 	margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+	--tw-space-y-reverse: 0;
+	margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+	margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
 .overflow-hidden {
 	overflow: hidden;
 }
@@ -1718,6 +1723,10 @@ select {
 .text-gray-300 {
 	--tw-text-opacity: 1;
 	color: rgba(209, 213, 219, var(--tw-text-opacity));
+}
+.text-blue-500 {
+	--tw-text-opacity: 1;
+	color: rgba(59, 130, 246, var(--tw-text-opacity));
 }
 .underline {
 	text-decoration: underline;
